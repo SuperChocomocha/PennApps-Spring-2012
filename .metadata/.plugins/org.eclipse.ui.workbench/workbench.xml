@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="25" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="683" x="683" y="0">
 <fastViewData fastViewLocation="1024"/>
-<intro standby="true"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
@@ -39,6 +38,10 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
 </presentation>
 </folder>
 </info>
@@ -46,9 +49,9 @@
 <editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="SpotMe Manifest" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/AndroidManifest.xml" title="SpotMe Manifest" tooltip="SpotMe/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/AndroidManifest.xml"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpotMeActivity.java" partName="SpotMeActivity.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/src/com/pennapps/spotme/SpotMeActivity.java" title="SpotMeActivity.java" tooltip="SpotMe/src/com/pennapps/spotme/SpotMeActivity.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpotMeActivity.java" partName="SpotMeActivity.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/src/com/pennapps/spotme/SpotMeActivity.java" title="SpotMeActivity.java" tooltip="SpotMe/src/com/pennapps/spotme/SpotMeActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/src/com/pennapps/spotme/SpotMeActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="259" selectionTopPixel="30"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="459" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FbDialog.java" partName="FbDialog.java" path="C:/Users/Harmony Li/facebook-android-sdk/facebook/src/com/facebook/android/FbDialog.java" title="FbDialog.java" tooltip="com_facebook_android/src/com/facebook/android/FbDialog.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com_facebook_android/src/com/facebook/android/FbDialog.java"/>
@@ -60,6 +63,20 @@
 <editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" partName="main.xml" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/res/layout/main.xml" title="main.xml" tooltip="SpotMe/res/layout/main.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/res/layout/main.xml"/>
 </editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="activate.xml" partName="activate.xml" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/res/layout/activate.xml" title="activate.xml" tooltip="SpotMe/res/layout/activate.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/res/layout/activate.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActivateActivity.java" partName="ActivateActivity.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/src/com/pennapps/spotme/ActivateActivity.java" title="ActivateActivity.java" tooltip="SpotMe/src/com/pennapps/spotme/ActivateActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/src/com/pennapps/spotme/ActivateActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="547" selectionTopPixel="0"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="deactivate.xml" partName="deactivate.xml" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/res/layout/deactivate.xml" title="deactivate.xml" tooltip="SpotMe/res/layout/deactivate.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/res/layout/deactivate.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Util.java" partName="Util.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/facebook/src/com/facebook/android/Util.java" title="Util.java" tooltip="facebook/src/com/facebook/android/Util.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/facebook/src/com/facebook/android/Util.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6043" selectionTopPixel="152"/>
+</editor>
 </editors>
 <views>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
@@ -67,10 +84,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -78,9 +91,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1326509145364">
@@ -111,16 +121,13 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="root" restore="true"/>
-<standbyPart/>
-</viewState>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -185,13 +192,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@5306989e" orientation="512" selectedTabId="org.eclipse.ui.internal.introview" style="0">
-<fastViews>
-<view id="org.eclipse.ui.internal.introview" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
@@ -207,7 +208,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@5306989e" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
@@ -254,6 +255,12 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/SpotMe/AndroidManifest.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com_facebook_android/src/com/facebook/android/FbDialog.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/SpotMe/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com_facebook_android/src/com/facebook/android/Util.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/SpotMe/res/layout/activate.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpotMe/src/com/pennapps/spotme/ActivateActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com_facebook_android/src/com/facebook/android/AsyncFacebookRunner.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/SpotMe/res/layout/deactivate.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/facebook/src/com/facebook/android/Util.java"/>
 </editors>
 <item historyLabel="Util.java" index="0">
 <position/>
@@ -296,8 +303,67 @@
 <position info="not_deleted" x="5023" y="15"/>
 </item>
 <item historyLabel="SpotMe Manifest" index="2"/>
-<item active="true" historyLabel="SpotMeActivity.java" index="1">
+<item historyLabel="SpotMeActivity.java" index="1">
 <position info="not_deleted" x="259" y="8"/>
+</item>
+<item historyLabel="Util.java" index="5">
+<position info="not_deleted" x="1399" y="0"/>
+</item>
+<item historyLabel="SpotMeActivity.java" index="1">
+<position info="not_deleted" x="741" y="0"/>
+</item>
+<item historyLabel="activate.xml" index="6"/>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="169" y="0"/>
+</item>
+<item historyLabel="SpotMeActivity.java" index="1">
+<position info="not_deleted" x="32" y="87"/>
+</item>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="610" y="0"/>
+</item>
+<item historyLabel="SpotMeActivity.java" index="1">
+<position info="not_deleted" x="459" y="0"/>
+</item>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="610" y="0"/>
+</item>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="617" y="0"/>
+</item>
+<item historyLabel="SpotMeActivity.java" index="1">
+<position info="not_deleted" x="459" y="0"/>
+</item>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="617" y="0"/>
+</item>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="606" y="0"/>
+</item>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="503" y="0"/>
+</item>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="599" y="0"/>
+</item>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="593" y="0"/>
+</item>
+<item historyLabel="activate.xml" index="6"/>
+<item historyLabel="ActivateActivity.java" index="7">
+<position info="not_deleted" x="547" y="0"/>
+</item>
+<item historyLabel="AsyncFacebookRunner.java" index="8">
+<position info="not_deleted" x="1848" y="19"/>
+</item>
+<item historyLabel="deactivate.xml" index="9">
+<position info="not_deleted" x="858" y="0"/>
+</item>
+<item historyLabel="SpotMeActivity.java" index="1">
+<position info="not_deleted" x="459" y="0"/>
+</item>
+<item active="true" historyLabel="Util.java" index="10">
+<position info="not_deleted" x="4" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -305,9 +371,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@5306989e"/>
 </trimArea>
@@ -322,6 +385,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Util.java" tooltip="facebook/src/com/facebook/android/Util.java">
+<persistable path="/facebook/src/com/facebook/android/Util.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="deactivate.xml" tooltip="SpotMe/res/layout/deactivate.xml">
+<persistable path="/SpotMe/res/layout/deactivate.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActivateActivity.java" tooltip="SpotMe/src/com/pennapps/spotme/ActivateActivity.java">
+<persistable path="/SpotMe/src/com/pennapps/spotme/ActivateActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="activate.xml" tooltip="SpotMe/res/layout/activate.xml">
+<persistable path="/SpotMe/res/layout/activate.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="SpotMe/res/layout/main.xml">
 <persistable path="/SpotMe/res/layout/main.xml"/>
 </file>

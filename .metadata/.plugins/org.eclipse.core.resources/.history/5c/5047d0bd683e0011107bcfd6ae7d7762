@@ -1,0 +1,10 @@
+package com.pennapps.spotme;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+
+public class ActivateActivity extends Activity{
+	
+
+}
