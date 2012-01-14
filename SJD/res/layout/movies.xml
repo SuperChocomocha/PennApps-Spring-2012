@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/wallpaper">
+	<TextView android:text="Movies" android:textSize="40sp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="145dp" android:id="@+id/textView1" android:layout_x="155dp" android:layout_y="31dp"></TextView>
+	<ImageView android:id="@+id/imageView1" android:layout_width="100dp" android:src="@drawable/movies" android:layout_height="100dp" android:layout_x="15dp" android:layout_y="4dp"></ImageView>
+</AbsoluteLayout>

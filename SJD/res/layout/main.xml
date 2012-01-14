@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/wallpaper"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<!-- <Button android:text="@string/login" android:layout_width="240px" android:layout_height="70px" 
+		android:layout_y="40px" android:layout_x="35px" android:textSize="30sp" android:onClick="onloginClick" 
+		/> <Button android:text="@string/proceed" android:layout_width="240px" android:layout_height="70px" 
+		android:layout_y="140px" android:layout_x="35px" android:textSize="30sp" 
+		android:onClick="onproceedClick" /> <Button android:text="@string/people" 
+		android:layout_width="240px" android:layout_height="70px" android:layout_y="240px" 
+		android:layout_x="35px" android:textSize="30sp" android:onClick="onpeopleClick" 
+		/> <Button android:text="@string/signout" android:layout_width="240px" android:layout_height="70px" 
+		android:layout_y="340px" android:layout_x="35px" android:textSize="30sp" 
+		android:onClick="onsignoutClick" /> -->
+	<TextView android:text="Social+" android:typeface="serif"
+		android:textSize="65dp" android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textStyle="normal|italic" android:layout_width="wrap_content"
+		android:id="@+id/textView1" android:layout_x="47dp" android:layout_y="125dp"></TextView>
+	<ImageButton android:clickable="true" android:background="@null"
+		android:src="@drawable/fbconnect" android:scaleType="fitXY"
+		android:layout_width="115dp" android:layout_height="wrap_content"
+		android:onClick="onloginClick" android:layout_x="97dp"
+		android:layout_y="284dp"></ImageButton>
+
+</AbsoluteLayout>

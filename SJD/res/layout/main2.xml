@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/wallpaper">
+
+	<ImageButton android:layout_width="240px"
+		android:scaleType="fitXY" android:src="@drawable/loginfalse"
+		android:clickable="false" android:onClick="onloginClick"
+		android:background="@null" android:layout_height="70px"
+		android:layout_x="35dp" android:layout_y="20dp"></ImageButton>
+
+	<ImageButton android:layout_width="240px"
+		android:scaleType="fitXY" android:src="@drawable/proceedtrue"
+		android:clickable="true" android:onClick="onproceedClick"
+		android:background="@null" android:layout_height="70px"
+		android:layout_x="35dp" android:layout_y="120dp"></ImageButton>
+
+	<ImageButton android:layout_width="240px"
+		android:scaleType="fitXY" android:src="@drawable/peopletrue"
+		android:clickable="true" android:onClick="onpeopleClick"
+		android:background="@null" android:layout_height="70px"
+		android:layout_x="35dp" android:layout_y="220dp"></ImageButton>
+
+	<ImageButton android:layout_width="240px"
+		android:scaleType="fitXY" android:src="@drawable/signouttrue"
+		android:clickable="true" android:onClick="onsignoutClick"
+		android:background="@null" android:layout_height="70px"
+		android:layout_x="35dp" android:layout_y="320dp"></ImageButton>
+
+</AbsoluteLayout>

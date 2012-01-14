@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/wallpaper">
+	<ImageView android:id="@+id/imageView1" android:layout_width="123dp"
+		android:src="@drawable/song" android:layout_height="wrap_content"
+		android:layout_x="15dp" android:layout_y="-28dp"></ImageView>
+	<TextView android:text="Concerts" android:textSize="40sp"
+		android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="165dp" android:id="@+id/textView1"
+		android:layout_x="135dp" android:layout_y="31dp"></TextView>
+</AbsoluteLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">SJD</string>
+    <string name="login">Login</string>
+    <string name="proceed">Proceed</string>
+    <string name="signout">Sign Out</string>
+    <string name="people">People</string>    
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/wallpaper">
+	<TextView android:text="TV Shows" android:textSize="40sp"
+		android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:id="@+id/textView1" android:layout_x="135dp" android:layout_y="31dp"
+		android:layout_width="wrap_content"></TextView>
+	<ImageView android:id="@+id/imageView1" android:layout_width="179dp" android:src="@drawable/tvs" android:layout_height="69dp" android:layout_x="-22dp" android:layout_y="10dp"></ImageView>
+</AbsoluteLayout>

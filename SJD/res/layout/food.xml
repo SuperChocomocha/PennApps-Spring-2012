@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AbsoluteLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/wallpaper">
+	<ImageView android:id="@+id/imageView1" android:layout_width="131dp" android:src="@drawable/food" android:layout_height="wrap_content" android:layout_x="19dp" android:layout_y="-17dp"></ImageView>
+	<TextView android:text="Food" android:textSize="40sp" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="145dp" android:id="@+id/textView1" android:layout_x="173dp" android:layout_y="33dp"></TextView>
+
+</AbsoluteLayout>
