@@ -11,22 +11,21 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int facebook_icon=0x7f020000;
-        public static final int fbconnect=0x7f020001;
-        public static final int food=0x7f020002;
-        public static final int icon=0x7f020003;
-        public static final int loginfalse=0x7f020004;
-        public static final int logintrue=0x7f020005;
-        public static final int movies=0x7f020006;
-        public static final int peoplefalse=0x7f020007;
-        public static final int peopletrue=0x7f020008;
-        public static final int proceedfalse=0x7f020009;
-        public static final int proceedtrue=0x7f02000a;
-        public static final int signoutfalse=0x7f02000b;
-        public static final int signouttrue=0x7f02000c;
-        public static final int song=0x7f02000d;
-        public static final int tvs=0x7f02000e;
-        public static final int wallpaper=0x7f02000f;
+        public static final int fbconnect=0x7f020000;
+        public static final int food=0x7f020001;
+        public static final int icon=0x7f020002;
+        public static final int loginfalse=0x7f020003;
+        public static final int logintrue=0x7f020004;
+        public static final int movies=0x7f020005;
+        public static final int peoplefalse=0x7f020006;
+        public static final int peopletrue=0x7f020007;
+        public static final int proceedfalse=0x7f020008;
+        public static final int proceedtrue=0x7f020009;
+        public static final int signoutfalse=0x7f02000a;
+        public static final int signouttrue=0x7f02000b;
+        public static final int song=0x7f02000c;
+        public static final int tvs=0x7f02000d;
+        public static final int wallpaper=0x7f02000e;
     }
     public static final class id {
         public static final int imageView1=0x7f050004;

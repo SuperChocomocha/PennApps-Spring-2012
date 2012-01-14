@@ -1,0 +1,93 @@
+!SESSION 2012-01-13 21:45:30.711 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_17
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2012-01-13 21:45:50.295
+!MESSAGE DDMS files not found: C:\Users\Harmony Li\eclipse\platform-tools\adb.exe C:\Users\Harmony Li\eclipse\tools\hprof-conv.exe C:\Users\Harmony Li\eclipse\tools\traceview.bat 
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-13 21:52:57.511
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/SpotMe/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1196)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-01-13 21:52:57.513
+!MESSAGE Resource '/SpotMe/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-13 21:53:26.204
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/facebook/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1196)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-01-13 21:53:26.205
+!MESSAGE Resource '/facebook/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-13 21:54:06.531
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/facebook/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1196)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-01-13 21:54:06.531
+!MESSAGE Resource '/facebook/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-13 21:54:06.738
+!MESSAGE fileChanged: failed to find manifest package for project facebook
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-13 21:55:12.121
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/SJD/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1196)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-01-13 21:55:12.121
+!MESSAGE Resource '/SJD/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-13 21:55:12.122
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/SpotMe/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1196)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-01-13 21:55:12.122
+!MESSAGE Resource '/SpotMe/res' does not exist.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-01-13 21:55:12.123
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/facebook/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1196)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-01-13 21:55:12.123
+!MESSAGE Resource '/facebook/res' does not exist.
+
+!ENTRY org.eclipse.ui 4 4 2012-01-13 22:06:24.685
+!MESSAGE Invalid preference page path: XML Syntax
