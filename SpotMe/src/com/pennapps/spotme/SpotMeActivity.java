@@ -1,8 +1,13 @@
 package com.pennapps.spotme;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.*;
+import android.location.*;
+
 import com.facebook.android.*;
 import com.facebook.android.Facebook.*;
 
@@ -15,18 +20,47 @@ public class SpotMeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        facebook.authorize(this, new DialogListener() {
-            @Override
-            public void onComplete(Bundle values) {}
+        facebook.authorize(this, new String[] { "email", "offline_access", "publish_checkins" },
 
-            @Override
-            public void onFacebookError(FacebookError error) {}
+        	      new DialogListener() {
+        	           
+        	           public void onComplete(Bundle values) {}
 
-            @Override
-            public void onError(DialogError e) {}
+        	           
+        	           public void onFacebookError(FacebookError error) {}
 
-            @Override
-            public void onCancel() {}
+        	           
+        	           public void onError(DialogError e) {}
+
+        	           
+        	           public void onCancel() {}
+        	      }
+        	);
+        final ToggleButton activateButton = (ToggleButton) this.findViewById(R.id.activateButton);
+        if(!activateButton.isChecked()){
+        	activateButton.setText("Activate SpotMe!");
+        }
+        activateButton.setTextOn("SpotMe ON");
+        activateButton.setTextOff("Activate SpotMe!");
+        activateButton.setOnClickListener(new View.OnClickListener(){
+        	public void onClick(View arg0){
+        		System.out.println(activateButton.isChecked());
+        		Intent activityIntent = new Intent(SpotMeActivity.this, SpotMeService.class);
+        		if (activateButton.isChecked()){
+        			startService(activityIntent);
+        		}else{
+        			stopService(activityIntent);
+        		}
+        	}
+        });
+        
+        Button settings = (Button) this.findViewById(R.id.settings);
+        settings.setOnClickListener(new View.OnClickListener(){
+        	public void onClick(View arg0){
+        		System.out.println("Settings");
+        		Intent intent = new Intent(SpotMeActivity.this, Settings.class);
+        		startActivity(intent);
+        	}
         });
     }
 

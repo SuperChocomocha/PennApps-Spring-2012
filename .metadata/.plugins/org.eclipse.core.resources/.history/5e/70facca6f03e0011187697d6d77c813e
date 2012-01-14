@@ -1,0 +1,20 @@
+package com.pennapps.spotme;
+
+import android.service.*;
+import android.app.IntentService;
+import android.content.*;
+
+public class SpotMeService extends IntentService{
+	
+	public SpotMeService(){
+		super("SpotMeService");
+	}
+	@Override
+	public int onStartCommand (Intent intent, int flags, int startId){
+		return null;
+	}
+	@Override
+	protected void onHandleIntent(Intent intent){
+	}
+	
+}
