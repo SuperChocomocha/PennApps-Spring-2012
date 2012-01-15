@@ -1,2 +1,10 @@
-PennApps Spring 2012 Project - currently untitled
+PennApps Spring 2012 Project - SpotMe
+
+requires python MySQLdb library
+requries pylast library
+will not work on Windows because of socket programming specifics
+
+when running:
+in algo.py, add API_KEY and API_SECRET
+in server_side.py, add in database info
 
