@@ -1,0 +1,13 @@
+package com.pennapps.spotme;
+
+import android.service.*;
+import android.app.*;
+import android.content.*;
+import android.location.*;
+import android.os.Bundle;
+
+
+public class SpotMeService extends Service{
+	private NotificationManager nm;
+	
+}

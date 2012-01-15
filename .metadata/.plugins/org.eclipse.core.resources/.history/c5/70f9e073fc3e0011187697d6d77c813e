@@ -1,0 +1,19 @@
+package com.pennapps.spotme;
+
+import android.service.*;
+import android.app.*;
+import android.content.*;
+import android.location.*;
+import android.os.*;
+
+
+public class SpotMeService extends Service{
+	private NotificationManager nm;
+
+	@Override
+	public IBinder onBind(Intent intent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

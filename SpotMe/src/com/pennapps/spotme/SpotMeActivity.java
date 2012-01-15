@@ -1,20 +1,24 @@
 package com.pennapps.spotme;
 
 import android.app.Activity;
+import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 import android.location.*;
+import android.app.*;
 
 import com.facebook.android.*;
 import com.facebook.android.Facebook.*;
 
 public class SpotMeActivity extends Activity {
+	
 
     Facebook facebook = new Facebook("198313533597169");
-
+   
+    
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +41,8 @@ public class SpotMeActivity extends Activity {
         	      }
         	);
         final ToggleButton activateButton = (ToggleButton) this.findViewById(R.id.activateButton);
-        if(!activateButton.isChecked()){
+        
+        if(!isSpotMeRunning()){
         	activateButton.setText("Activate SpotMe!");
         }
         activateButton.setTextOn("SpotMe ON");
@@ -70,4 +75,15 @@ public class SpotMeActivity extends Activity {
 
         facebook.authorizeCallback(requestCode, resultCode, data);
     }
+    private boolean isSpotMeRunning(){
+    	ActivityManager manager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+        for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if ("com.pennapps.spotme".equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
+
+
