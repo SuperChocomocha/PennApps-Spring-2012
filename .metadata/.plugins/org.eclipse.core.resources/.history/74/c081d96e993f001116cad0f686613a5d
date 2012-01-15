@@ -39,29 +39,57 @@ public class SpotMeActivity extends Activity {
 			facebook.setAccessExpires(expires);
 		}
 		
+		SharedPreferences.Editor editor = settings.edit();
+		editor.putString("facebookToken", facebook.toString());
+		editor.commit();
+		
 		if(!facebook.isSessionValid()){
-			 facebook.authorize(this, new String[] {}, new DialogListener() {
-	         
-	                public void onComplete(Bundle values) {
-	                    SharedPreferences.Editor editor = settings.edit();
-	                    editor.putString("access_token", facebook.getAccessToken());
-	                    editor.putLong("access_expires", facebook.getAccessExpires());
-	                    editor.commit();
-	                }
-	    
-	              
-	                public void onFacebookError(FacebookError error) {}
-	    
-	                
-	                public void onError(DialogError e) {}
-	    
-	              
-	                public void onCancel() {}
-	            });
-			 	SharedPreferences.Editor editor = settings.edit();
-				editor.putString("FID", meRequestListener.fid);
-				editor.putString("username", meRequestListener.username);
-				editor.commit();
+			facebook.authorize(this, new String[] {"user_actions.music"},
+					new DialogListener() {
+
+				public void onComplete(Bundle values) {
+					AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
+
+					// post information about the currently logged in user
+					mAsyncRunner.request("me/", new meRequestListener());
+
+					// get information about the currently played song
+					mAsyncRunner.request("me/music.listens", new idRequestListener());
+
+					// post song info to server
+					mAsyncRunner.request(idRequestListener.songID, new musicRequestListener());
+
+				}
+
+
+				public void onFacebookError(FacebookError error) {}
+
+
+				public void onError(DialogError e) {}
+
+
+				public void onCancel() {}
+			});
+
+
+			if(facebook.isSessionValid()){
+				AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
+				// post information about the currently logged in user
+				mAsyncRunner.request("me/", new meRequestListener());
+
+				// get information about the currently played song
+				mAsyncRunner.request("me/music.listens", new idRequestListener());
+
+				// post song info to server
+				mAsyncRunner.request(idRequestListener.songID, new musicRequestListener());
+
+				//			// post checkin data if gps location doesn't work
+				//			mAsyncRunner.request("me/friends", new checkinsRequestListener());
+			}
+			
+			editor.putString("FID", meRequestListener.fid);
+			editor.putString("username", meRequestListener.username);
+			editor.commit();
 
 		}
 		final ToggleButton activateButton = (ToggleButton) this.findViewById(R.id.activateButton);

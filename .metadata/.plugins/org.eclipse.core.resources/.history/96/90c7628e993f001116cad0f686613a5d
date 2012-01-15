@@ -58,10 +58,27 @@ public class SpotMeActivity extends Activity {
 	              
 	                public void onCancel() {}
 	            });
-			 	SharedPreferences.Editor editor = settings.edit();
-				editor.putString("FID", meRequestListener.fid);
-				editor.putString("username", meRequestListener.username);
-				editor.commit();
+			
+
+
+			if(facebook.isSessionValid()){
+				AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
+				// post information about the currently logged in user
+				mAsyncRunner.request("me/", new meRequestListener());
+
+				// get information about the currently played song
+				mAsyncRunner.request("me/music.listens", new idRequestListener());
+
+				// post song info to server
+				mAsyncRunner.request(idRequestListener.songID, new musicRequestListener());
+
+				//			// post checkin data if gps location doesn't work
+				//			mAsyncRunner.request("me/friends", new checkinsRequestListener());
+			}
+			
+			editor.putString("FID", meRequestListener.fid);
+			editor.putString("username", meRequestListener.username);
+			editor.commit();
 
 		}
 		final ToggleButton activateButton = (ToggleButton) this.findViewById(R.id.activateButton);

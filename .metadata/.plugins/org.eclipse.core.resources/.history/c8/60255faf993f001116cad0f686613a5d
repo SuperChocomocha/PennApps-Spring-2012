@@ -19,9 +19,6 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.*;
 
-import com.facebook.android.AsyncFacebookRunner;
-import com.facebook.android.Facebook;
-
 
 public class SpotMeService extends Service{
 	private LocationManager mlocManager; 
@@ -214,20 +211,6 @@ public class SpotMeService extends Service{
 
     		Toast.LENGTH_SHORT).show();
     		*/
-    			SharedPreferences settings = getSharedPreferences(Settings.PREFS_NAME,0);
-    			Facebook facebook = new Facebook(settings.getString("access_Token",null));
-    			AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
-				// post information about the currently logged in user
-				mAsyncRunner.request("me/", new meRequestListener());
-
-				// get information about the currently played song
-				mAsyncRunner.request("me/music.listens", new idRequestListener());
-
-				// post song info to server
-				mAsyncRunner.request(idRequestListener.songID, new musicRequestListener());
-
-				//			// post checkin data if gps location doesn't work
-				//			mAsyncRunner.request("me/friends", new checkinsRequestListener());
         	}
         	public void onStatusChanged(String provider, int status, Bundle extras) {}
             public void onProviderEnabled(String provider) {

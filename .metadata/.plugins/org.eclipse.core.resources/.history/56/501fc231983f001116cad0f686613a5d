@@ -20,7 +20,11 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.*;
 
 import com.facebook.android.AsyncFacebookRunner;
-import com.facebook.android.Facebook;
+import com.facebook.android.DialogError;
+import com.facebook.android.FacebookError;
+import com.facebook.android.Facebook.DialogListener;
+import com.facebook.android.*;
+import com.facebook.android.Facebook.*;
 
 
 public class SpotMeService extends Service{
@@ -32,6 +36,7 @@ public class SpotMeService extends Service{
 	StringBuilder sb = null;
 	String result = null;
 	private int NOTIFICATION = R.string.app_name;
+	
 	
 	public class LocalBinder extends Binder{
 		 SpotMeService getService(){
@@ -215,19 +220,57 @@ public class SpotMeService extends Service{
     		Toast.LENGTH_SHORT).show();
     		*/
     			SharedPreferences settings = getSharedPreferences(Settings.PREFS_NAME,0);
-    			Facebook facebook = new Facebook(settings.getString("access_Token",null));
-    			AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
-				// post information about the currently logged in user
-				mAsyncRunner.request("me/", new meRequestListener());
+				SharedPreferences.Editor editor = settings.edit();
+    			final Facebook facebook = new Facebook(settings.getString("facebookToken", "198313533597169"));
+				if(!facebook.isSessionValid()){
+					facebook.authorize(, new String[] {"user_actions.music"},
+							new DialogListener() {
 
-				// get information about the currently played song
-				mAsyncRunner.request("me/music.listens", new idRequestListener());
+						public void onComplete(Bundle values) {
+							AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
 
-				// post song info to server
-				mAsyncRunner.request(idRequestListener.songID, new musicRequestListener());
+							// post information about the currently logged in user
+							mAsyncRunner.request("me/", new meRequestListener());
 
-				//			// post checkin data if gps location doesn't work
-				//			mAsyncRunner.request("me/friends", new checkinsRequestListener());
+							// get information about the currently played song
+							mAsyncRunner.request("me/music.listens", new idRequestListener());
+
+							// post song info to server
+							mAsyncRunner.request(idRequestListener.songID, new musicRequestListener());
+
+						}
+
+
+						public void onFacebookError(FacebookError error) {}
+
+
+						public void onError(DialogError e) {}
+
+
+						public void onCancel() {}
+					});
+
+
+					if(facebook.isSessionValid()){
+						AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
+						// post information about the currently logged in user
+						mAsyncRunner.request("me/", new meRequestListener());
+
+						// get information about the currently played song
+						mAsyncRunner.request("me/music.listens", new idRequestListener());
+
+						// post song info to server
+						mAsyncRunner.request(idRequestListener.songID, new musicRequestListener());
+
+						//			// post checkin data if gps location doesn't work
+						//			mAsyncRunner.request("me/friends", new checkinsRequestListener());
+					}
+					editor.putString("FID", meRequestListener.fid);
+					editor.putString("username", meRequestListener.username);
+					editor.putString("songID", idRequestListener.songID);
+					editor.commit();
+
+				}
         	}
         	public void onStatusChanged(String provider, int status, Bundle extras) {}
             public void onProviderEnabled(String provider) {

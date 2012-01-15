@@ -20,7 +20,7 @@ public class SpotMeActivity extends Activity {
 
 
 	Facebook facebook = new Facebook("198313533597169");
-	SharedPreferences settings = getSharedPreferences(Settings.PREFS_NAME,0);
+	private SharedPreferences mPrefs;
 	InputStream is = null;
 	StringBuilder sb = null;
 	String result = null;
@@ -30,40 +30,17 @@ public class SpotMeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		String access_token = settings.getString("access_token", null);
-		long expires = settings.getLong("access_expires", 0);
-		if(access_token != null){
-			facebook.setAccessToken(access_token);
-		}
-		if (expires !=0){
+		mPrefs = getPreferences(MODE_PRIVATE);
+		String access_token = mPrefs.getString("access_token", null);
+		long expires = mPrefs.getLong("access_expires", 0);
+		if(access_token != null)
 			facebook.setAccessExpires(expires);
-		}
 		
-		if(!facebook.isSessionValid()){
-			 facebook.authorize(this, new String[] {}, new DialogListener() {
-	         
-	                public void onComplete(Bundle values) {
-	                    SharedPreferences.Editor editor = settings.edit();
-	                    editor.putString("access_token", facebook.getAccessToken());
-	                    editor.putLong("access_expires", facebook.getAccessExpires());
-	                    editor.commit();
-	                }
-	    
-	              
-	                public void onFacebookError(FacebookError error) {}
-	    
-	                
-	                public void onError(DialogError e) {}
-	    
-	              
-	                public void onCancel() {}
-	            });
-			 	SharedPreferences.Editor editor = settings.edit();
-				editor.putString("FID", meRequestListener.fid);
-				editor.putString("username", meRequestListener.username);
-				editor.commit();
-
-		}
+		SharedPreferences settings = getSharedPreferences(Settings.PREFS_NAME,0);
+		SharedPreferences.Editor editor = settings.edit();
+		editor.putString("facebookToken", facebook.toString());
+		editor.commit();
+	
 		final ToggleButton activateButton = (ToggleButton) this.findViewById(R.id.activateButton);
 		activateButton.setTextOn("SpotMe ON");
 		activateButton.setTextOff("Activate SpotMe!");
