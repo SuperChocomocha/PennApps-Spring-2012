@@ -11,16 +11,12 @@ import com.facebook.android.*;
 import com.facebook.android.Facebook.*;
 
 public class Settings extends Activity{
-	protected static final String PREFS_NAME = "MyPrefsFile";
 	protected static boolean showContact;
 	protected static boolean showRecent;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.settings);
-		
-		SharedPreferences settings = getSharedPreferences(PREFS_NAME,0);
-		bool
 		
 		final CheckBox name = (CheckBox) this.findViewById(R.id.showname);
 		name.setOnClickListener(new OnClickListener(){

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="31" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="683" x="683" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -22,7 +22,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ant.ui.internal.editor.AntEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.layout.LayoutEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -54,6 +54,20 @@
 <part id="15"/>
 <part id="16"/>
 <part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
+<part id="31"/>
 </presentation>
 </folder>
 </info>
@@ -62,9 +76,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/facebook/src/com/facebook/android/Util.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="835" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpotMeActivity.java" partName="SpotMeActivity.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/src/com/pennapps/spotme/SpotMeActivity.java" title="SpotMeActivity.java" tooltip="SpotMe/src/com/pennapps/spotme/SpotMeActivity.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpotMeActivity.java" partName="SpotMeActivity.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/src/com/pennapps/spotme/SpotMeActivity.java" title="SpotMeActivity.java" tooltip="SpotMe/src/com/pennapps/spotme/SpotMeActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/src/com/pennapps/spotme/SpotMeActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2141" selectionTopPixel="713"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="881" selectionTopPixel="180"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.ClassFileEditor" name="Facebook$DialogListener.class" partName="Facebook$DialogListener.class" title="Facebook$DialogListener.class" tooltip="com.facebook.android.Facebook$DialogListener" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=SpotMe/C:\/Users\/Harmony Li\/PennApps-Spring-2012\/facebook\/bin\/facebook.jar&lt;com.facebook.android(Facebook$DialogListener.class"/>
@@ -102,7 +116,72 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Settings.java" partName="Settings.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/src/com/pennapps/spotme/Settings.java" title="Settings.java" tooltip="SpotMe/src/com/pennapps/spotme/Settings.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/src/com/pennapps/spotme/Settings.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="302" selectionTopPixel="8"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="697" selectionTopPixel="135"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpotMeService.java" partName="SpotMeService.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/src/com/pennapps/spotme/SpotMeService.java" title="SpotMeService.java" tooltip="SpotMe/src/com/pennapps/spotme/SpotMeService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/src/com/pennapps/spotme/SpotMeService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1771" selectionTopPixel="682"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" partName="strings.xml" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/res/values/strings.xml" title="strings.xml" tooltip="SpotMe/res/values/strings.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/res/values/strings.xml"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="resources.ap_" partName="resources.ap_" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/bin/resources.ap_" title="resources.ap_" tooltip="SpotMe/bin/resources.ap_" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/bin/resources.ap_"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="SpotMe.apk" partName="SpotMe.apk" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/bin/SpotMe.apk" title="SpotMe.apk" tooltip="SpotMe/bin/SpotMe.apk" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/bin/SpotMe.apk"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" partName="R.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/gen/com/pennapps/spotme/R.java" title="R.java" tooltip="SpotMe/gen/com/pennapps/spotme/R.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/gen/com/pennapps/spotme/R.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1473" selectionTopPixel="75"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="info.xml" partName="info.xml" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/res/layout/info.xml" title="info.xml" tooltip="SpotMe/res/layout/info.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/res/layout/info.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Information.java" partName="Information.java" path="C:/Users/Harmony Li/PennApps-Spring-2012/SpotMe/src/com/pennapps/spotme/Information.java" title="Information.java" tooltip="SpotMe/src/com/pennapps/spotme/Information.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpotMe/src/com/pennapps/spotme/Information.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="496" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Notepadv1.java" partName="Notepadv1.java" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv1Solution/src/com/android/demo/notepad1/Notepadv1.java" title="Notepadv1.java" tooltip="Notepadv1/src/com/android/demo/notepad1/Notepadv1.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv1/src/com/android/demo/notepad1/Notepadv1.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2228" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NotesDbAdapter.java" partName="NotesDbAdapter.java" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv1Solution/src/com/android/demo/notepad1/NotesDbAdapter.java" title="NotesDbAdapter.java" tooltip="Notepadv1/src/com/android/demo/notepad1/NotesDbAdapter.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv1/src/com/android/demo/notepad1/NotesDbAdapter.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1220" selectionTopPixel="180"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="notes_row.xml" partName="notes_row.xml" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv1Solution/res/layout/notes_row.xml" title="notes_row.xml" tooltip="Notepadv1/res/layout/notes_row.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv1/res/layout/notes_row.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="notepad_list.xml" partName="notepad_list.xml" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv1Solution/res/layout/notepad_list.xml" title="notepad_list.xml" tooltip="Notepadv1/res/layout/notepad_list.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv1/res/layout/notepad_list.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NoteEdit.java" partName="NoteEdit.java" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv3Solution/src/com/android/demo/notepad3/NoteEdit.java" title="NoteEdit.java" tooltip="Notepadv3/src/com/android/demo/notepad3/NoteEdit.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv3/src/com/android/demo/notepad3/NoteEdit.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1733" selectionTopPixel="90"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Notepadv3.java" partName="Notepadv3.java" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv3Solution/src/com/android/demo/notepad3/Notepadv3.java" title="Notepadv3.java" tooltip="Notepadv3/src/com/android/demo/notepad3/Notepadv3.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv3/src/com/android/demo/notepad3/Notepadv3.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2373" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NotesDbAdapter.java" partName="NotesDbAdapter.java" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv3Solution/src/com/android/demo/notepad3/NotesDbAdapter.java" title="NotesDbAdapter.java" tooltip="Notepadv3/src/com/android/demo/notepad3/NotesDbAdapter.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv3/src/com/android/demo/notepad3/NotesDbAdapter.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1664" selectionTopPixel="180"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="note_edit.xml" partName="note_edit.xml" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv3Solution/res/layout/note_edit.xml" title="note_edit.xml" tooltip="Notepadv3/res/layout/note_edit.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv3/res/layout/note_edit.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="notes_list.xml" partName="notes_list.xml" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv3Solution/res/layout/notes_list.xml" title="notes_list.xml" tooltip="Notepadv3/res/layout/notes_list.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv3/res/layout/notes_list.xml"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="notes_row.xml" partName="notes_row.xml" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv3Solution/res/layout/notes_row.xml" title="notes_row.xml" tooltip="Notepadv3/res/layout/notes_row.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv3/res/layout/notes_row.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Notepadv2.java" partName="Notepadv2.java" path="C:/Users/Harmony Li/Downloads/NotepadCodeLab/NotepadCodeLab/Notepadv2Solution/src/com/android/demo/notepad2/Notepadv2.java" title="Notepadv2.java" tooltip="Notepadv2/src/com/android/demo/notepad2/Notepadv2.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Notepadv2/src/com/android/demo/notepad2/Notepadv2.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2583" selectionTopPixel="585"/>
 </editor>
 </editors>
 <views>
@@ -112,7 +191,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (7 items)"/>
+<category IMemento.internal.id="Warnings (100 of 302 items)"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="711"/>
@@ -155,6 +234,9 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
 <viewState/>
 </view>
@@ -162,7 +244,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.android.ide.eclipse.ddms.views.LogCatView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -226,6 +308,7 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
 <layout>
@@ -250,14 +333,15 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.18450184" ratioLeft="250" ratioRight="1105" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.2873016" ratioLeft="181" ratioRight="449" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.20442805" ratioLeft="277" ratioRight="1078" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.8" ratioLeft="504" ratioRight="126" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<page content="com.android.ide.eclipse.ddms.views.EmulatorControlView" label="Emulator Control"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -267,6 +351,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -285,127 +370,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/SpotMe/res/layout/main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/SpotMe/res/layout/deactivate.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/SpotMe/res/layout/settings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ElistCBox/src/aexp/elistcbox/ElistCBox.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ant.ui.internal.editor.AntEditor" path="/ElistCBox/build.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/ElistCBox/bin/ElistCBox.apk"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/ElistCBox/res/layout/group_row.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/ElistCBox/res/layout/child_row.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/ElistCBox/res/layout/main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/ApiDemos/res/menu/checkable.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/ApiDemos/res/layout/scrollbar1.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/ApiDemos/res/layout/status_bar_balloon.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/ApiDemos/res/menu/camera_menu.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/ApiDemos/res/menu/order.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/ApiDemos/res/menu/shortcuts.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpotMe/src/com/pennapps/spotme/SpotMeActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpotMe/src/com/pennapps/spotme/SpotMeService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/SpotMe/bin/resources.ap_"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/SpotMe/bin/SpotMe.apk"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpotMe/gen/com/pennapps/spotme/R.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpotMe/src/com/pennapps/spotme/Settings.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpotMe/src/com/pennapps/spotme/Information.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/SpotMe/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Notepadv1/src/com/android/demo/notepad1/Notepadv1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Notepadv1/src/com/android/demo/notepad1/NotesDbAdapter.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/Notepadv1/res/layout/notes_row.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/Notepadv1/res/layout/notepad_list.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Notepadv3/src/com/android/demo/notepad3/NoteEdit.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Notepadv3/src/com/android/demo/notepad3/Notepadv3.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Notepadv3/src/com/android/demo/notepad3/NotesDbAdapter.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/Notepadv3/res/layout/note_edit.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/Notepadv3/res/layout/notes_list.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/Notepadv3/res/layout/notes_row.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Notepadv2/src/com/android/demo/notepad2/Notepadv2.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpotMe/src/com/pennapps/spotme/SpotMeActivity.java"/>
 </editors>
-<item historyLabel="ElistCBox.java" index="3">
-<position info="not_deleted" x="2182" y="0"/>
+<item historyLabel="R.java" index="3">
+<position info="not_deleted" x="1473" y="0"/>
 </item>
-<item historyLabel="settings.xml" index="2"/>
-<item historyLabel="build.xml" index="4">
-<position info="not_deleted" x="602" y="0"/>
+<item historyLabel="SpotMe Manifest" index="6"/>
+<item historyLabel="R.java" index="3">
+<position info="not_deleted" x="1473" y="0"/>
 </item>
-<item historyLabel="ElistCBox.apk" index="5">
+<item historyLabel="Information.java" index="5">
+<position info="not_deleted" x="496" y="0"/>
+</item>
+<item historyLabel="Notepadv1.java" index="7">
+<position info="not_deleted" x="1048" y="0"/>
+</item>
+<item historyLabel="NotesDbAdapter.java" index="8">
+<position info="not_deleted" x="1220" y="0"/>
+</item>
+<item historyLabel="Notepadv1.java" index="7">
+<position info="not_deleted" x="2106" y="0"/>
+</item>
+<item historyLabel="notes_row.xml" index="9"/>
+<item historyLabel="notepad_list.xml" index="10"/>
+<item historyLabel="notes_row.xml" index="9"/>
+<item historyLabel="Notepadv1.java" index="7">
+<position info="not_deleted" x="2106" y="0"/>
+</item>
+<item historyLabel="NoteEdit.java" index="11">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="Notepadv3.java" index="12">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="NotesDbAdapter.java" index="13">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="Notepadv3.java" index="12">
+<position info="not_deleted" x="1415" y="0"/>
+</item>
+<item historyLabel="note_edit.xml" index="14"/>
+<item historyLabel="notes_list.xml" index="15"/>
+<item historyLabel="notes_row.xml" index="16"/>
+<item historyLabel="NoteEdit.java" index="11">
+<position info="not_deleted" x="1733" y="0"/>
+</item>
+<item historyLabel="Notepadv3.java" index="12">
+<position info="not_deleted" x="2373" y="0"/>
+</item>
+<item historyLabel="NotesDbAdapter.java" index="13">
+<position info="not_deleted" x="1664" y="0"/>
+</item>
+<item historyLabel="Notepadv1.java" index="7">
+<position info="not_deleted" x="1912" y="0"/>
+</item>
+<item historyLabel="Notepadv2.java" index="17">
+<position info="not_deleted" x="2583" y="0"/>
+</item>
+<item historyLabel="Notepadv1.java" index="7">
+<position info="not_deleted" x="1912" y="0"/>
+</item>
+<item historyLabel="R.java" index="3">
+<position info="not_deleted" x="1473" y="0"/>
+</item>
+<item historyLabel="Settings.java" index="4">
+<position info="not_deleted" x="32" y="258"/>
+</item>
+<item historyLabel="Settings.java" index="4">
+<position info="not_deleted" x="1007" y="0"/>
+</item>
+<item historyLabel="R.java" index="3">
+<position info="not_deleted" x="1473" y="0"/>
+</item>
+<item historyLabel="resources.ap_" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="group_row.xml" index="6"/>
-<item historyLabel="child_row.xml" index="7"/>
-<item historyLabel="main.xml" index="8"/>
-<item historyLabel="group_row.xml" index="6"/>
-<item historyLabel="checkable.xml" index="9"/>
-<item historyLabel="scrollbar1.xml" index="10"/>
-<item historyLabel="status_bar_balloon.xml" index="11"/>
-<item historyLabel="camera_menu.xml" index="12"/>
-<item historyLabel="order.xml" index="13"/>
-<item historyLabel="shortcuts.xml" index="14"/>
-<item historyLabel="checkable.xml" index="9"/>
-<item historyLabel="settings.xml" index="2"/>
-<item historyLabel="main.xml" index="0"/>
-<item historyLabel="settings.xml" index="2"/>
-<item historyLabel="main.xml" index="0"/>
-<item historyLabel="settings.xml" index="2"/>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="1894" y="0"/>
-</item>
-<item historyLabel="main.xml" index="0"/>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="1894" y="0"/>
-</item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="1672" y="0"/>
-</item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="1757" y="0"/>
-</item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="1833" y="0"/>
-</item>
-<item historyLabel="Settings.java" index="16">
+<item historyLabel="SpotMe.apk" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="1833" y="0"/>
+<item historyLabel="SpotMe.apk" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="1869" y="0"/>
+<item historyLabel="SpotMeService.java" index="0">
+<position info="not_deleted" x="305" y="0"/>
 </item>
-<item historyLabel="Settings.java" index="16">
-<position info="not_deleted" x="249" y="0"/>
+<item historyLabel="Settings.java" index="4">
+<position info="not_deleted" x="472" y="0"/>
 </item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="32" y="215"/>
+<item historyLabel="SpotMeService.java" index="0">
+<position info="not_deleted" x="305" y="0"/>
 </item>
-<item historyLabel="Settings.java" index="16">
-<position info="not_deleted" x="437" y="0"/>
+<item historyLabel="Settings.java" index="4">
+<position info="not_deleted" x="1316" y="0"/>
 </item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="1894" y="0"/>
-</item>
-<item historyLabel="checkable.xml" index="9"/>
-<item historyLabel="settings.xml" index="2"/>
-<item historyLabel="Settings.java" index="16">
-<position info="not_deleted" x="442" y="0"/>
-</item>
-<item historyLabel="main.xml" index="0"/>
-<item historyLabel="deactivate.xml" index="1"/>
-<item historyLabel="Settings.java" index="16">
-<position info="not_deleted" x="442" y="0"/>
-</item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="739" y="0"/>
-</item>
-<item historyLabel="Settings.java" index="16">
+<item historyLabel="SpotMeService.java" index="0">
 <position info="not_deleted" x="302" y="0"/>
 </item>
-<item historyLabel="settings.xml" index="2"/>
-<item historyLabel="Settings.java" index="16">
-<position info="not_deleted" x="249" y="0"/>
+<item historyLabel="SpotMeActivity.java" index="18">
+<position info="not_deleted" x="440" y="0"/>
 </item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="739" y="0"/>
+<item historyLabel="Settings.java" index="4">
+<position info="not_deleted" x="1316" y="0"/>
 </item>
-<item historyLabel="Settings.java" index="16">
-<position info="not_deleted" x="249" y="0"/>
+<item historyLabel="SpotMeActivity.java" index="18">
+<position info="not_deleted" x="404" y="14"/>
 </item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="739" y="0"/>
-</item>
-<item historyLabel="Settings.java" index="16">
+<item historyLabel="SpotMeService.java" index="0">
 <position info="not_deleted" x="302" y="0"/>
 </item>
-<item historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="264" y="14"/>
+<item historyLabel="SpotMeActivity.java" index="18">
+<position info="not_deleted" x="440" y="0"/>
 </item>
-<item historyLabel="Settings.java" index="16">
+<item historyLabel="Settings.java" index="4">
+<position info="not_deleted" x="1316" y="0"/>
+</item>
+<item historyLabel="R.java" index="3">
+<position info="not_deleted" x="1473" y="0"/>
+</item>
+<item historyLabel="SpotMe.apk" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SpotMeService.java" index="0">
 <position info="not_deleted" x="302" y="0"/>
 </item>
-<item active="true" historyLabel="SpotMeActivity.java" index="15">
-<position info="not_deleted" x="264" y="14"/>
+<item historyLabel="Settings.java" index="4">
+<position info="not_deleted" x="575" y="0"/>
+</item>
+<item historyLabel="Settings.java" index="4">
+<position info="not_deleted" x="697" y="0"/>
+</item>
+<item historyLabel="SpotMeService.java" index="0">
+<position info="not_deleted" x="394" y="0"/>
+</item>
+<item historyLabel="SpotMeActivity.java" index="18">
+<position info="not_deleted" x="881" y="0"/>
+</item>
+<item active="true" historyLabel="SpotMeService.java" index="0">
+<position info="not_deleted" x="394" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -413,6 +532,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -420,54 +542,55 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Settings.java" tooltip="SpotMe/src/com/pennapps/spotme/Settings.java">
-<persistable path="/SpotMe/src/com/pennapps/spotme/Settings.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Notepadv2.java" tooltip="Notepadv2/src/com/android/demo/notepad2/Notepadv2.java">
+<persistable path="/Notepadv2/src/com/android/demo/notepad2/Notepadv2.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="shortcuts.xml" tooltip="ApiDemos/res/menu/shortcuts.xml">
-<persistable path="/ApiDemos/res/menu/shortcuts.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="notes_row.xml" tooltip="Notepadv3/res/layout/notes_row.xml">
+<persistable path="/Notepadv3/res/layout/notes_row.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="order.xml" tooltip="ApiDemos/res/menu/order.xml">
-<persistable path="/ApiDemos/res/menu/order.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="notes_list.xml" tooltip="Notepadv3/res/layout/notes_list.xml">
+<persistable path="/Notepadv3/res/layout/notes_list.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="camera_menu.xml" tooltip="ApiDemos/res/menu/camera_menu.xml">
-<persistable path="/ApiDemos/res/menu/camera_menu.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="note_edit.xml" tooltip="Notepadv3/res/layout/note_edit.xml">
+<persistable path="/Notepadv3/res/layout/note_edit.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="status_bar_balloon.xml" tooltip="ApiDemos/res/layout/status_bar_balloon.xml">
-<persistable path="/ApiDemos/res/layout/status_bar_balloon.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NotesDbAdapter.java" tooltip="Notepadv3/src/com/android/demo/notepad3/NotesDbAdapter.java">
+<persistable path="/Notepadv3/src/com/android/demo/notepad3/NotesDbAdapter.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="scrollbar1.xml" tooltip="ApiDemos/res/layout/scrollbar1.xml">
-<persistable path="/ApiDemos/res/layout/scrollbar1.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Notepadv3.java" tooltip="Notepadv3/src/com/android/demo/notepad3/Notepadv3.java">
+<persistable path="/Notepadv3/src/com/android/demo/notepad3/Notepadv3.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" name="checkable.xml" tooltip="ApiDemos/res/menu/checkable.xml">
-<persistable path="/ApiDemos/res/menu/checkable.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NoteEdit.java" tooltip="Notepadv3/src/com/android/demo/notepad3/NoteEdit.java">
+<persistable path="/Notepadv3/src/com/android/demo/notepad3/NoteEdit.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="settings.xml" tooltip="SpotMe/res/layout/settings.xml">
-<persistable path="/SpotMe/res/layout/settings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="notepad_list.xml" tooltip="Notepadv1/res/layout/notepad_list.xml">
+<persistable path="/Notepadv1/res/layout/notepad_list.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="menu.xml" tooltip="SpotMe/res/layout/menu.xml">
-<persistable path="/SpotMe/res/layout/menu.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="notes_row.xml" tooltip="Notepadv1/res/layout/notes_row.xml">
+<persistable path="/Notepadv1/res/layout/notes_row.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="activate.xml" tooltip="SpotMe/res/layout/activate.xml">
-<persistable path="/SpotMe/res/layout/activate.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NotesDbAdapter.java" tooltip="Notepadv1/src/com/android/demo/notepad1/NotesDbAdapter.java">
+<persistable path="/Notepadv1/src/com/android/demo/notepad1/NotesDbAdapter.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="SpotMe/res/layout/main.xml">
-<persistable path="/SpotMe/res/layout/main.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Notepadv1.java" tooltip="Notepadv1/src/com/android/demo/notepad1/Notepadv1.java">
+<persistable path="/Notepadv1/src/com/android/demo/notepad1/Notepadv1.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="deactivate.xml" tooltip="SpotMe/res/layout/deactivate.xml">
-<persistable path="/SpotMe/res/layout/deactivate.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Information.java" tooltip="SpotMe/src/com/pennapps/spotme/Information.java">
+<persistable path="/SpotMe/src/com/pennapps/spotme/Information.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActivateActivity.java" tooltip="SpotMe/src/com/pennapps/spotme/ActivateActivity.java">
-<persistable path="/SpotMe/src/com/pennapps/spotme/ActivateActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="info.xml" tooltip="SpotMe/res/layout/info.xml">
+<persistable path="/SpotMe/res/layout/info.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="SpotMe/AndroidManifest.xml">
-<persistable path="/SpotMe/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="SpotMe/gen/com/pennapps/spotme/R.java">
+<persistable path="/SpotMe/gen/com/pennapps/spotme/R.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Facebook$DialogListener.class" tooltip="com.facebook.android.Facebook$DialogListener">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=SpotMe/C:\/Users\/Harmony Li\/PennApps-Spring-2012\/facebook\/bin\/facebook.jar&lt;com.facebook.android(Facebook$DialogListener.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="SpotMe.apk" tooltip="SpotMe/bin/SpotMe.apk">
+<persistable path="/SpotMe/bin/SpotMe.apk"/>
 </file>
 </mruList>
 </workbench>
