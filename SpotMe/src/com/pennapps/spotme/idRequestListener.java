@@ -17,6 +17,7 @@ import com.facebook.android.FacebookError;
 import android.util.Log;
 
 public class idRequestListener implements RequestListener{
+	protected static String songID;
 
 
 	public void onComplete(String response, Object state) {
@@ -39,6 +40,7 @@ public class idRequestListener implements RequestListener{
 			json = json.getJSONObject("data");
 			json = json.getJSONObject("song");
 			String id = json.getString("id");
+			songID = id;
 			Log.e("log_tag", id);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block

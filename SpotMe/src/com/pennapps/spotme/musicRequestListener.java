@@ -45,8 +45,8 @@ public class musicRequestListener implements RequestListener{
 			nameValuePairs.add(new BasicNameValuePair("Title", title));
 			nameValuePairs.add(new BasicNameValuePair("Artist", artist));
 			nameValuePairs.add(new BasicNameValuePair("Album", album));
-			j.accumulate("FID", "563672645");
-			j.accumulate("Name", "Dan Trujillo");
+			j.accumulate("FID", meRequestListener.fid);
+			j.accumulate("Name", meRequestListener.username);
 			j.accumulate("Title", title);
 			j.accumulate("Artist", artist);
 			j.accumulate("Album", album);

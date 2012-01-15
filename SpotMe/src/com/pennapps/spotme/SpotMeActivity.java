@@ -38,55 +38,9 @@ public class SpotMeActivity extends Activity {
 		
 		SharedPreferences settings = getSharedPreferences(Settings.PREFS_NAME,0);
 		SharedPreferences.Editor editor = settings.edit();
-		editor.putString("FID", meRequestListener.fid);
-		editor.putString("username", meRequestListener.username);
+		editor.putString("facebookToken", facebook.toString());
 		editor.commit();
-
-		if(!facebook.isSessionValid()){
-			facebook.authorize(this, new String[] {"user_actions.music"},
-					new DialogListener() {
-
-				public void onComplete(Bundle values) {
-					AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
-
-					// post information about the currently logged in user
-					mAsyncRunner.request("me/", new meRequestListener());
-
-					// get information about the currently played song
-					mAsyncRunner.request("me/music.listens", new idRequestListener());
-
-					// post song info to server
-					mAsyncRunner.request("10150106679409734", new musicRequestListener());
-
-				}
-
-
-				public void onFacebookError(FacebookError error) {}
-
-
-				public void onError(DialogError e) {}
-
-
-				public void onCancel() {}
-			});
-
-
-			if(facebook.isSessionValid()){
-				AsyncFacebookRunner mAsyncRunner = new AsyncFacebookRunner(facebook);
-				// post information about the currently logged in user
-				mAsyncRunner.request("me/", new meRequestListener());
-
-				// get information about the currently played song
-				mAsyncRunner.request("me/music.listens", new idRequestListener());
-
-				// post song info to server
-				mAsyncRunner.request("10150106679409734", new musicRequestListener());
-
-				//			// post checkin data if gps location doesn't work
-				//			mAsyncRunner.request("me/friends", new checkinsRequestListener());
-			}
-
-		}
+	
 		final ToggleButton activateButton = (ToggleButton) this.findViewById(R.id.activateButton);
 		activateButton.setTextOn("SpotMe ON");
 		activateButton.setTextOff("Activate SpotMe!");
