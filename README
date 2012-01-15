@@ -1,10 +1,10 @@
 PennApps Spring 2012 Project - SpotMe
 
-requires python MySQLdb library
-requries pylast library
+uses Facebook API
+requires python MySQLdb library in order to interact with MySQL from within python
+requries pylast library (Last.FM API)
 will not work on Windows because of socket programming specifics
 
 when running:
-in algo.py, add API_KEY and API_SECRET
-in server_side.py, add in database info
-
+in algo.py, add API_KEY and API_SECRET in order to use Last.FM API
+in server_side.py, add database info
