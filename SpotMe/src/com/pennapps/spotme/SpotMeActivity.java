@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
@@ -41,15 +42,12 @@ public class SpotMeActivity extends Activity {
         	      }
         	);
         final ToggleButton activateButton = (ToggleButton) this.findViewById(R.id.activateButton);
-        
-        if(!isSpotMeRunning()){
-        	activateButton.setText("Activate SpotMe!");
-        }
         activateButton.setTextOn("SpotMe ON");
         activateButton.setTextOff("Activate SpotMe!");
+        SharedPreferences pref = getSharedPreferences(Settings.PREFS_NAME,0);
+        activateButton.setChecked(pref.getBoolean("activated", false));
         activateButton.setOnClickListener(new View.OnClickListener(){
         	public void onClick(View arg0){
-        		System.out.println(activateButton.isChecked());
         		Intent activityIntent = new Intent(SpotMeActivity.this, SpotMeService.class);
         		if (activateButton.isChecked()){
         			startService(activityIntent);
@@ -75,6 +73,7 @@ public class SpotMeActivity extends Activity {
 
         facebook.authorizeCallback(requestCode, resultCode, data);
     }
+    /*
     private boolean isSpotMeRunning(){
     	ActivityManager manager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
         for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
@@ -83,7 +82,8 @@ public class SpotMeActivity extends Activity {
             }
         }
         return false;
-    }
+    }*/
+    
 }
 
 

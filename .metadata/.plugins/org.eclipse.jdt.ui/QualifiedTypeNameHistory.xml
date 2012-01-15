@@ -12,4 +12,9 @@
 <fullyQualifiedTypeName name="com.pennapps.spotme.R.drawable"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="com.pennapps.spotme.R.id"/>
+<fullyQualifiedTypeName name="android.preference.PreferenceActivity"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences.Editor"/>
+<fullyQualifiedTypeName name="android.location.Location"/>
 </qualifiedTypeNameHistroy>

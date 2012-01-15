@@ -1,18 +1,21 @@
-#Sat Jan 14 20:34:48 EST 2012
+#Sun Jan 15 03:06:41 EST 2012
+emulatorControl.track.first=122
 emulatorControl.track.count=38
-emulatorControl.waypoint.latitude=76
-emulatorControl.track.comment=76
-logcat.view.colsize.Text=543
-logcat.view.colsize.Level=29
-logcat.view.colsize.Tag=107
 logcat.view.colsize.PID=50
-logcat.view.colsize.Application=143
+emulatorControl.track.comment=76
+emulatorControl.waypoint.longitude=76
 emulatorControl.track.last=122
-logcat.view.colsize.Time=130
+eclipse.preferences.version=1
+logcat.view.colsize.Level=48
+emulatorControl.waypoint.desc=107
+logcat.view.colsize.Tag=66
+logcat.view.colsize.Time=199
+devicePanel.Col4=68
+devicePanel.Col1=51
+logcat.view.colsize.Application=74
+emulatorControl.waypoint.elevation=53
+devicePanel.Col0=250
 emulatorControl.track.name=129
 emulatorControl.waypoint.name=79
-emulatorControl.waypoint.longitude=76
-eclipse.preferences.version=1
-emulatorControl.waypoint.elevation=53
-emulatorControl.track.first=122
-emulatorControl.waypoint.desc=107
+logcat.view.colsize.Text=543
+emulatorControl.waypoint.latitude=76
