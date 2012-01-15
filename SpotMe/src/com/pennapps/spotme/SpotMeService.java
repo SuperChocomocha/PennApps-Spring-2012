@@ -7,12 +7,12 @@ import android.app.*;
 import android.content.*;
 import android.location.*;
 import android.os.*;
+import org.json.*;
 
 
 public class SpotMeService extends Service{
-	protected static boolean showName;
-	
-	
+	private LocationManager mlocManager; 
+	private LocationListener mlocListener;
 	private NotificationManager mNM;
 	
 	private int NOTIFICATION = R.string.app_name;
@@ -26,14 +26,23 @@ public class SpotMeService extends Service{
 	@Override
 	public void onCreate(){
 		mNM = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+		SharedPreferences settings = getSharedPreferences(Settings.PREFS_NAME,0);
+		SharedPreferences.Editor editor = settings.edit();
+		editor.putBoolean("activated",true);
+		editor.commit();
+		System.out.println(settings.getAll());
 		showStartNotification();
+		LocationManager locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+		LocationListener locationListener = new MyLocationListener();
+		mlocManager = locationManager;
+		mlocListener = locationListener;
+		mlocManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,mlocListener);
 	}
 	
 	@Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.i("SpotMeService", "Received start id " + startId + ": " + intent);
-        // We want this service to continue running until it is explicitly
-        // stopped, so return sticky.
+		
         return START_STICKY;
     }
 
@@ -44,6 +53,12 @@ public class SpotMeService extends Service{
 
         // Tell the user we stopped.
         Toast.makeText(this, "SpotMe stopped" , Toast.LENGTH_SHORT).show();
+        SharedPreferences settings = getSharedPreferences(Settings.PREFS_NAME,0);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("activated",false);
+		editor.commit();
+		System.out.println(settings.getAll());
+		mlocManager.removeUpdates(mlocListener);
     }
 
     @Override
@@ -85,4 +100,45 @@ public class SpotMeService extends Service{
     	Notification notification = new Notification (R.drawable.ic_launcher, info, System.currentTimeMillis());
     	
     }
-}
+
+    public class MyLocationListener implements LocationListener{
+    	public void onLocationChanged(Location loc){
+    		JSONObject object = new JSONObject();
+    			try{
+    				object.put("lat", loc.getLatitude());
+    				object.put("long",loc.getLongitude());
+    			}catch(JSONException e){
+    				e.printStackTrace();
+    			}
+    			System.out.println(object);
+    		/*loc.getLatitude();
+
+    		loc.getLongitude();
+
+    		String Text = "My current location is:" +
+
+    		"Latitude = " + loc.getLatitude() +
+
+    		"Logitude = " + loc.getLongitude();
+
+
+    		Toast.makeText( getApplicationContext(),
+
+    		Text,
+
+    		Toast.LENGTH_SHORT).show();
+    		*/
+        	}
+        	public void onStatusChanged(String provider, int status, Bundle extras) {}
+            public void onProviderEnabled(String provider) {
+            	Toast.makeText(getApplicationContext(), "GPS Enabled", Toast.LENGTH_SHORT).show();
+            }
+            public void onProviderDisabled(String provider) {
+            	Toast.makeText(getApplicationContext(),"GPS Disabled", Toast.LENGTH_SHORT).show();
+            }
+
+        };
+        	
+        }
+
+
